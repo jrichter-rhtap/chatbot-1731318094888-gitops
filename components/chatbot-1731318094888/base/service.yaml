@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: chatbot-1731318094888
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: chatbot-1731318094888 
+  name: chatbot-1731318094888
+spec:
+  ports:
+  - port: 8501
+    protocol: TCP
+    targetPort: 8501
+  selector:
+    app.kubernetes.io/instance: chatbot-1731318094888 
